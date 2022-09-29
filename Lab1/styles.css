@@ -1,0 +1,120 @@
+html { width:100%; height:100%; margin:0; padding: 0; }
+body { width:100%; height:100%; margin:0; padding: 0; }
+
+.wrapper
+{
+    display: grid;
+    
+    grid-auto-rows: minmax(1fr, auto);
+}
+
+.headRow
+{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px;
+    color: white;
+    background-color: #441311;
+}
+
+
+.rightColumn
+{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    padding: 10px;
+    font-size:x-large;
+    color:white;
+    background-color: #1A211C;
+}
+
+
+.midColumn
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 10px;
+    font-size:xx-large;
+    color:white;
+    background-color: #20291F;
+}
+
+.center
+{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    padding: 10px;
+    font-size: large;
+    color: white;
+    background-color: #2C3A21;
+}
+
+.centerPictureWrapper
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: minmax(1fr, auto);
+    padding: 10px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    color: white;
+    background-color: #2C3A21;
+}
+.centerPicture
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #2C3A21;
+}
+
+.leftColumn
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    padding: 10px;
+    color: white;
+    background-color: #84531A;
+}
+
+.footRow
+{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    padding: 10px;
+    color: white;
+    background-color: #643A12;
+}
+
+a:link 
+{
+    color:white; 
+    text-decoration:underline
+}
+a:visited 
+{color:
+    wheat; 
+    text-decoration:underline
+}
