@@ -1,0 +1,186 @@
+html { width:100%; height:100%; margin:0; padding: 0; }
+body { width:100%; height:100%; margin:0; padding: 0; }
+
+.wrapper
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.headBlock
+{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    order: 1;
+}
+
+.headRow
+{
+    display: flex;
+    color:white;
+    background-color: #441311;
+    padding: 10px;
+    order: 1;
+    gap: 40px;
+}
+
+.title
+{
+    color:white;
+    background-color: #2b0503;
+    padding: 10px;
+    width: 80%;
+    order: 1;
+    align-self: center;
+    text-align: center;
+}
+
+.titleText
+{
+    color:white;
+    background-color: #441311;
+    font-size:x-large;
+    padding: 10px;
+    order: 2;
+}
+
+.leftBlock
+{
+    display: flex;
+    flex-flow: row wrap;
+    order: 2;
+    flex: 4 0 0;
+    justify-items: flex-start;
+}
+
+.leftColumn
+{
+    padding: 10px;
+    color: white;
+    background-color: #84531A;
+    flex: 1 0px;
+}
+
+
+.centerBlock
+{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 3 0px;
+}
+
+.midColumn
+{
+    display: flex;
+    font-size:xx-large;
+    color:white;
+    background-color: #20291F;
+}
+
+.currentPage
+{
+    font-size:xx-large;
+    color:white;
+    background-color: #031602;
+    width: 20%;
+    text-align: center;
+    padding: 10px; 
+}
+
+.otherPages
+{
+    font-size:xx-large;
+    color:white;
+    background-color: #20291F;
+    width: 20%;
+    text-align: center;
+    padding: 10px; 
+}
+
+
+.center
+{
+    padding: 10px;
+    font-size: large;
+    color: white;
+    background-color: #2C3A21;
+    flex: 1 0px;
+}
+
+.rightColumn
+{
+    padding: 10px;
+    font-size:x-large;
+    color:white;
+    background-color: #1d2520;
+    flex: 1 0px;
+    order: 2;
+}
+
+.footRow
+{
+    display: flex;
+    padding: 10px;
+    color: white;
+    background-color: #643A12;
+    gap: 40px;
+    order: 3;
+}
+
+.footerText
+{
+    color:white;
+    background-color: #643A12;
+    font-size:x-large;
+    padding: 10px;
+    order: 1;
+}
+
+.footer
+{
+    color:white;
+    background-color: #3a1e06;
+    padding: 10px;
+    margin: 40px;
+    width: 100%;
+    order: 2;
+    align-self: center;
+}
+
+
+.centerPictureWrapper
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: minmax(1fr, auto);
+    padding: 10px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    color: white;
+    background-color: #2C3A21;
+}
+
+.centerPicture
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #2C3A21;
+}
+
+a:link 
+{
+    color:white; 
+    text-decoration:underline
+}
+a:visited 
+{color:
+    wheat; 
+    text-decoration:underline
+}
