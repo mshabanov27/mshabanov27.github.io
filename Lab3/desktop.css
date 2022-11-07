@@ -1,0 +1,91 @@
+html { width:100%; height:100%; margin:0; padding: 0; }
+body { width:100%; height:100%; margin:0; padding: 0; }
+
+.tableLayout
+{
+    margin-left: auto; 
+    margin-right: auto;
+    padding:0; 
+    color: #ffffff;
+}
+
+.headerBlock
+{
+    padding: 10px; 
+    width:80%;
+}
+
+.headerLine
+{
+    display: inline-block; 
+    box-sizing: border-box; 
+    text-align: center; 
+    background-color:#2b0503; 
+    width: 30%; 
+    padding: 1%; 
+    margin: 1%; 
+    font-size: x-large;
+}
+
+.introduction
+{
+    display: inline-block; 
+    box-sizing: border-box; 
+    vertical-align: middle; 
+    width: 60%; 
+    padding: 1%;
+}
+
+.rightBlock
+{
+    padding: 10px; 
+    width:20%;
+}
+
+.leftBlock
+{
+    padding: 10px;
+    width:20%;
+}
+
+.midColumn
+{
+    padding: 10px; 
+    width:60%; 
+    height: 10px; 
+    text-align: center; 
+    font-size: x-large;
+}
+
+.centerBlock
+{
+    padding: 10px; 
+    width:60%; 
+    height:70%;
+}
+
+.footerBlock
+{
+    padding: 10px;
+}
+
+.footerLine
+{
+    display: inline-block; 
+    box-sizing: border-box; 
+    text-align: center; 
+    background-color:#3a1e06;
+    width: 30%; 
+    padding: 1%; 
+    margin: 1%; 
+    font-size: x-large;
+}
+
+.epilogue
+{
+    display: inline-block; 
+    box-sizing: border-box; 
+    vertical-align: middle; 
+    width: 65%; 
+    padding: 1%;
+}
