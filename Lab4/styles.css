@@ -1,0 +1,134 @@
+html { width:100%; height:100%; margin:0; padding: 0; }
+body { width:100%; height:100%; margin:0; padding: 0; background-color: white;}
+
+.headerLine
+{
+    display: flex;
+    background-color: white;
+}
+
+.menuBlock
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: 15%;
+}   
+
+.menuItem
+{
+    color: grey;
+    margin: 30px;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logoPicture
+{
+    margin-left: 200px;
+    align-self: center;
+}
+
+.upBlock
+{
+    display: grid;
+    height: 60%;
+    background-color: #e0e5eb;
+}
+
+
+.womanPicture
+{
+    margin-left: 60%;
+    grid-column: 1 / 9;
+    grid-row: 5 / 12;
+    width: 75%;
+}
+
+.conferencePicture
+{
+    margin-top: 10%;
+    margin-left: 35%;
+    grid-column: 7 / 19;
+    grid-row: 1 / 7;
+    width: 80%;
+}   
+
+.floatingBlock
+{
+    margin-left: 27%;
+    grid-column:  15 / 25;
+    grid-row: 6 / 11;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+    background-color: #478ac9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.floatingBlockTitle
+{
+    font-size:xxx-large;
+    margin-top: 5%;
+}
+
+.floatingBlockText
+{
+    font-size: 20px;
+    line-height: 45px;
+    margin-top: 5%;
+}
+
+.readMoreBlock
+{
+    text-align: center;
+    padding: 20px;
+    margin-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border: 2px solid #e0e5eb;
+    color: white;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    background-color: #478ac9;
+    width: 20%;
+    margin-top: 15%;
+}
+
+.readMoreBlock:hover{
+    background-color: #0d5ba3;
+    
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+
+.downBlock
+{
+    background-color: white;
+    height: 40%;
+}
+
+.footerBlock
+{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    background-color: #333333;
+}
+
+.footerText
+{
+    width: 23%;
+    margin: 40px;
+    text-align: center;
+    border: 0px solid #ccc;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+    color: white;
+    background-color: #333333;
+}
+
