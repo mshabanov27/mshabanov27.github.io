@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
         <title>Lab1</title>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
     </head>
 
     <body>
         <div class="headerLine">
-            <img src="logo.jpg" class="logoPicture" alt="logo" />
             <div class="menuBlock">
-                <div class="menuItem">
-                    Home
-                </div>
-                <div style="color:cornflowerblue" class="menuItem">
-                    About
-                </div>
-                <div class="menuItem">
-                    Contact
+                <img src="logo.jpg" class="logoPicture" alt="logo" />
+
+                <input type="checkbox" id="hamburgerPressed">
+                <label for="hamburgerPressed" class="hamburger">
+                    <span></span>
+                </label>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="Page.html" class="menuItem">Home</a></li>
+                        <li><a href="https:/google.com" style="color:cornflowerblue" class="menuItem">About</a></li>
+                        <li><a href="https://microsoft.com" class="menuItem">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
