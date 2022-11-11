@@ -1,5 +1,5 @@
 html { width:100%; height:100%; margin:0; padding: 0; }
-body { width:100%; height:100%; margin:0; padding: 0; background-color: white;}
+body { width:100%; height:100%; margin:0; padding: 0; }
 a{text-decoration: none;}
 ul{list-style: none;}
 
@@ -9,7 +9,7 @@ ul{list-style: none;}
     display: flex;
     background-color: white;
     position: relative;
-    width: 100%;
+    min-width: 495px;
 }
 
 .menuBlock
@@ -224,6 +224,8 @@ ul li
         display: grid;
         height: 50%;
         background-color: #e0e5eb;
+        justify-content: center;
+        min-width: 495px;
     }
 
     .conferencePicture
@@ -290,6 +292,7 @@ ul li
     {
         background-color: white;
         height: 90%;
+        min-width: 495px;
     }
 
     .footerText
@@ -320,6 +323,7 @@ ul li
     padding: 10px;
     color: white;
     background-color: #333333;
+    min-width: 495px;
 }
 
 
