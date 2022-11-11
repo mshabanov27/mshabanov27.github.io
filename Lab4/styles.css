@@ -133,13 +133,14 @@ ul li
     .upBlock
     {
         display: grid;
-        height: 60%;
         background-color: #e0e5eb;
+        max-height: 550px;
     }
 
     .womanPicture
     {
         margin-left: 60%;
+        margin-bottom: 50px;
         grid-column: 1 / 9;
         grid-row: 5 / 12;
         width: 75%;
@@ -201,6 +202,7 @@ ul li
     {
         background-color: white;
         height: 40%;
+        min-height: 450px;
     }
 
     .footerText
@@ -226,6 +228,7 @@ ul li
         background-color: #e0e5eb;
         justify-content: center;
         min-width: 495px;
+        max-height: 450px;
     }
 
     .conferencePicture
@@ -253,6 +256,7 @@ ul li
         grid-row: 9 / 17;
         width: 320px;
         padding: 5%;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         color: white;
@@ -291,7 +295,7 @@ ul li
     .downBlock
     {
         background-color: white;
-        height: 90%;
+        min-height: 750px;
         min-width: 495px;
     }
 
