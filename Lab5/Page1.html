@@ -208,11 +208,10 @@
             }
         }
 
-        // swapElementsContent();
-        // calculateArea();
-        // alertBoxAppear();
+        swapElementsContent();
+        calculateArea();
+        alertBoxAppear();
         let last_state = localStorage.getItem('last_state') === "true";
-        alert(last_state);
         document.getElementById('font_changer').checked = last_state;
         set_font(last_state);
         
