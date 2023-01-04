@@ -154,7 +154,7 @@
         function getCookie(name) 
         {
             let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-            return matches ? decodeURIComponent(matches[1]) : undefined;
+            return matches ? decodeURIComponent(matches[1]) : 0;
         }
         
         function alertBoxAppear()
@@ -189,11 +189,28 @@
                 val = document.getElementById('left_col').innerText;
                 document.getElementById('left_col').innerText = val;
             }
+            localStorage.setItem('last_state', box.checked);
+        }
+
+        function set_font(state)
+        {
+            if (state == true)
+            {   
+                val = document.getElementById('left_col').innerText;
+                document.getElementById('left_col').innerText = val;
+            }
+            else
+            {
+                val = document.getElementById('left_col').innerHTML;
+                document.getElementById('left_col').innerHTML = val.italics();
+            }
         }
 
         swapElementsContent();
         calculateArea();
         alertBoxAppear();
+        document.getElementById('left_col').checked = localStorage.getItem('last_state')
+        setFont(localStorage.getItem('last_state'))
     </script>
         
     </body>
