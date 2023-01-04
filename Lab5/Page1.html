@@ -196,13 +196,13 @@
         {
             if (state == true)
             {   
-                val = document.getElementById('left_col').innerText;
-                document.getElementById('left_col').innerText = val;
+                val = document.getElementById('left_col').innerHTML;
+                document.getElementById('left_col').innerHTML = val.italics();
             }
             else
             {
-                val = document.getElementById('left_col').innerHTML;
-                document.getElementById('left_col').innerHTML = val.italics();
+                val = document.getElementById('left_col').innerText;
+                document.getElementById('left_col').innerText = val;
             }
         }
 
