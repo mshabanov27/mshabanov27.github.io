@@ -23,13 +23,17 @@
 
                 <div class="leftBlock">
                     <div class="leftColumn">
-                        Dante, like most Florentines of his day, was embroiled in the Guelph–Ghibelline conflict. He fought in the Battle of Campaldino (11 June, 1289), with the Florentine Guelphs against Arezzo Ghibellines; then in 1294 he was among the escorts of Charles Martel of Anjou (grandson of Charles I of Anjou) while he was in Florence. 
-                        To further his political career, he became a pharmacist. He did not intend to practice as one, but a law issued in 1295 required nobles aspiring to public office to be enrolled in one of the Corporazioni delle Arti e dei Mestieri, so Dante obtained admission to the Apothecaries' Guild. 
-                        This profession was not inappropriate, since at that time books were sold from apothecaries' shops. As a politician, he accomplished little but held various offices over some years in a city rife with political unrest.
-                        Pope Boniface quickly dismissed the other delegates and asked Dante alone to remain in Rome. At the same time (1 November, 1301), Charles of Valois entered Florence with the Black Guelphs, who in the next six days destroyed much of the city and killed many of their enemies. 
-                        A new Black Guelph government was installed, and Cante dei Gabrielli da Gubbio was appointed podestà of the city. In March 1302, Dante, a White Guelph by affiliation, along with the Gherardini family, was condemned to exile for two years and ordered to pay a large fine. Dante was accused of corruption and financial wrongdoing by the Black Guelphs for the time that Dante was serving as city prior (Florence's highest position) for two months in 1300.
-                        The poet was still in Rome in 1302, as the Pope, who had backed the Black Guelphs, had "suggested" that Dante stay there. Florence under the Black Guelphs, therefore, considered Dante an absconder.
-                        Dante did not pay the fine, in part because he believed he was not guilty and in part because all his assets in Florence had been seized by the Black Guelphs. He was condemned to perpetual exile; if he had returned to Florence without paying the fine, he could have been burned at the stake. 
+                        <div id='left_col'>
+                            Dante, like most Florentines of his day, was embroiled in the Guelph–Ghibelline conflict. He fought in the Battle of Campaldino (11 June, 1289), with the Florentine Guelphs against Arezzo Ghibellines; then in 1294 he was among the escorts of Charles Martel of Anjou (grandson of Charles I of Anjou) while he was in Florence. 
+                            To further his political career, he became a pharmacist. He did not intend to practice as one, but a law issued in 1295 required nobles aspiring to public office to be enrolled in one of the Corporazioni delle Arti e dei Mestieri, so Dante obtained admission to the Apothecaries' Guild. 
+                            This profession was not inappropriate, since at that time books were sold from apothecaries' shops. As a politician, he accomplished little but held various offices over some years in a city rife with political unrest.
+                            Pope Boniface quickly dismissed the other delegates and asked Dante alone to remain in Rome. At the same time (1 November, 1301), Charles of Valois entered Florence with the Black Guelphs, who in the next six days destroyed much of the city and killed many of their enemies. 
+                            A new Black Guelph government was installed, and Cante dei Gabrielli da Gubbio was appointed podestà of the city. In March 1302, Dante, a White Guelph by affiliation, along with the Gherardini family, was condemned to exile for two years and ordered to pay a large fine. Dante was accused of corruption and financial wrongdoing by the Black Guelphs for the time that Dante was serving as city prior (Florence's highest position) for two months in 1300.
+                            The poet was still in Rome in 1302, as the Pope, who had backed the Black Guelphs, had "suggested" that Dante stay there. Florence under the Black Guelphs, therefore, considered Dante an absconder.
+                            Dante did not pay the fine, in part because he believed he was not guilty and in part because all his assets in Florence had been seized by the Black Guelphs. He was condemned to perpetual exile; if he had returned to Florence without paying the fine, he could have been burned at the stake.
+                        </div>
+                        <input type="checkbox" id="font_changer" onclick="change_font(this)" name="font_changer" style="width: 20px; height: 20px;"/>
+                        <div style="font-size: 20px;">Change Font</div>
                     </div>
         
                     <div class="centerBlock">
@@ -170,12 +174,26 @@
 
         function delete_cookie(name) 
         {
-            document.cookie = name += "= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+            document.cookie = name += "= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
         }
 
-        swapElementsContent();
-        calculateArea();
-        alertBoxAppear();
+        function change_font(box)
+        {   
+            if (box.checked == true)
+            {   
+                val = document.getElementById('left_col').innerHTML;
+                document.getElementById('left_col').innerHTML = val.italics();
+            }
+            else
+            {
+                val = document.getElementById('left_col').innerText;
+                document.getElementById('left_col').innerText = val;
+            }
+        }
+
+        // swapElementsContent();
+        // calculateArea();
+        // alertBoxAppear();
     </script>
         
     </body>
