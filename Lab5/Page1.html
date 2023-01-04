@@ -38,7 +38,7 @@
         
                     <div class="centerBlock">
                         <div class="midColumn">
-                            Good afternoon everybodieh. Upd ready.
+                            Good afternoon everybodieh.
                         </div>
             
                         <div class="center">
@@ -183,13 +183,15 @@
             {   
                 val = document.getElementById('left_col').innerHTML;
                 document.getElementById('left_col').innerHTML = val.italics();
+                localStorage.setItem('last_state', true);
             }
-            else
+            else if (box.checked == false)
             {
                 val = document.getElementById('left_col').innerText;
                 document.getElementById('left_col').innerText = val;
+                localStorage.setItem('last_state', false);
             }
-            localStorage.setItem('last_state', box.checked);
+            
         }
 
         function set_font(state)
@@ -206,11 +208,14 @@
             }
         }
 
-        swapElementsContent();
-        calculateArea();
-        alertBoxAppear();
-        document.getElementById('left_col').checked = localStorage.getItem('last_state')
-        setFont(localStorage.getItem('last_state'))
+        // swapElementsContent();
+        // calculateArea();
+        // alertBoxAppear();
+        let last_state = localStorage.getItem('last_state') === "true";
+        alert(last_state);
+        document.getElementById('font_changer').checked = last_state;
+        set_font(last_state);
+        
     </script>
         
     </body>
