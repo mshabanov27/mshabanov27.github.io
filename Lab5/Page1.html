@@ -156,12 +156,10 @@
         function alertBoxAppear()
         {
             let cookie_piece = getCookie('min_number');
-            if (window.confirm(`Save cookies?`))
+            if (window.confirm(`Number of occurences is ${cookie_piece}\nSave cookies?`))
             {
+                alert("Cookies are saved. Reload page please.")
                 document.getElementById("form").style.display = 'none';
-                alert(`Number of occurences is ${cookie_piece}`);
-
-                centerBlock.innerHTML += `Number of occurences is ${cookie_piece}`;
             }
             else
             {
