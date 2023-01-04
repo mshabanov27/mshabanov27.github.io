@@ -99,9 +99,6 @@
         </div>
 
     <script>
-        document.cookie = "bebra=118a";
-        alert(document.cookie);
-
         function swapElementsContent()
         {
             let headerBlock = document.getElementById('headerBlock');
@@ -178,7 +175,9 @@
             document.cookie = name += "= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
         }
 
-        
+        swapElementsContent();
+        calculateArea();
+        alertBoxAppear();
     </script>
         
     </body>
